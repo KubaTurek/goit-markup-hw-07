@@ -654,7 +654,7 @@ color: rgba(255, 255, 255, 0.6);
   align-items: center;
 }
 
-.modal-label-checkbox::before {
+.modal__label-checkbox::before {
   content: '';
   display: block;
   width: 16px;
@@ -664,7 +664,7 @@ color: rgba(255, 255, 255, 0.6);
   border-radius: 2px;
 }
 
-.modal__checkbox:checked+.modal-label-checkbox::before {
+.modal__checkbox:checked+.modal__label-checkbox::before {
   background-color: var(--brand-color);
   border: none;
   display: block;
@@ -673,6 +673,111 @@ color: rgba(255, 255, 255, 0.6);
   background-position: center center;
   border-radius: 2px;
 }
+
+.modal__close-btn {
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  cursor: pointer;
+}
+
+.modal__textarea {
+  font-size: 12px;
+  font-weight: 400;
+  padding: 12px 16px;
+  letter-spacing: 0.01em;
+  width: 100%;
+  margin-top: 4px;
+  margin-bottom: 10px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+}
+
+.modal__textarea::placeholder {
+  color: rgba(117, 117, 117, 0.5);
+}
+
+.modal__textarea:focus-within {
+  border: 1px solid var(--brand-color);
+  fill: var(--brand-color);
+  outline: none;
+}
+
+.modal__input:focus-within {
+  border: 1px solid var(--brand-color);
+  fill: var(--brand-color);
+  outline: none;
+}
+
+.modal__label-checkbox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #757575;
+  
+}
+
+.modal__label:focus-within {
+  fill: var(--brand-color);
+}
+
+.modal__button {
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: var(--brand-color);
+  color: #fff;
+  width: 200px;
+  height: 50px;
+  justify-content: center;
+  align-items: center;
+  border: 1px var(--brand-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.875;
+  letter-spacing: 0.06em;
+  margin-top: 30px;
+}
+
+.modal__link {
+  color: var(--brand-color);
+}
+
+.svg-envelope {
+  position: absolute;
+  left: 55px;
+  top: 34px;
+}
+
+.svg-phone {
+  position: absolute;
+  left: 55px;
+  top: 34px;
+}
+
+.svg-person {
+  position: absolute;
+  left: 55px;
+  top: 34px;
+}
+
+
+
+
+
+
+
 
 
 
@@ -871,94 +976,4 @@ color: rgba(255, 255, 255, 0.6);
 
 .instagram-div {
   background-color: rgba(255, 255, 255, 0.1);
-}
-
-.close-btn {
-  border-radius: 50%;
-  width: 30px;
-  height: 30px;
-  position: absolute;
-  top: 8px;
-  right: 8px;
-  border: 1px solid rgba(0, 0, 0, 0.1);
-  background-color: #fff;
-  justify-content: center;
-  align-items: center;
-  display: flex;
-  cursor: pointer;
-}
-
-.modal__textarea {
-  font-size: 12px;
-  font-weight: 400;
-  padding: 12px 16px;
-  letter-spacing: 0.01em;
-  width: 100%;
-  margin-top: 4px;
-  margin-bottom: 10px;
-  border: 1px solid rgba(33, 33, 33, 0.2);
-  border-radius: 4px;
-}
-.modal__textarea::placeholder {
-  color: rgba(117, 117, 117, 0.5);
-}
-.modal__textarea:focus-within {
-  border: 1px solid var(--brand-color);
-  fill: var(--brand-color);
-  outline: none;
-}
-
-.modal-input:focus-within {
-  border: 1px solid var(--brand-color);
-  fill: var(--brand-color);
-  outline: none;
-}
-.modal-label-checkbox {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: #757575;
-}
-.modal-label:focus-within {
-  fill: var(--brand-color);
-}
-.modal-button {
-  display: flex;
-  margin-left: auto;
-  margin-right: auto;
-  background-color: var(--brand-color);
-  color: #fff;
-  width: 200px;
-  height: 50px;
-  justify-content: center;
-  align-items: center;
-  border: 1px var(--brand-color);
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  border-radius: 4px;
-  cursor: pointer;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.875;
-  letter-spacing: 0.06em;
-  margin-top: 30px;
-}
-
-.modal-link {
-  color: var(--brand-color);
-}
-
-.svg-envelope {
-  position: absolute;
-  left: 55px;
-  top: 34px;
-}
-.svg-phone {
-  position: absolute;
-  left: 55px;
-  top: 34px;
-}
-.svg-person {
-  position: absolute;
-  left: 55px;
-  top: 34px;
 }
