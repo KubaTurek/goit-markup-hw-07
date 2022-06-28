@@ -650,8 +650,8 @@ color: rgba(255, 255, 255, 0.6);
   -moz-appearance: none;
   -webkit-appearance: none;
   appearance: none;
-  display: flex;
-  align-items: center;
+  /**display: flex;
+    align-items: center;*/
 }
 
 .modal__label-checkbox::before {
@@ -664,7 +664,7 @@ color: rgba(255, 255, 255, 0.6);
   border-radius: 2px;
 }
 
-.modal__checkbox:checked+.modal__label-checkbox::before {
+.modal__checkbox:checked + .modal__label-checkbox::before {
   background-color: var(--brand-color);
   border: none;
   display: block;
@@ -754,19 +754,19 @@ color: rgba(255, 255, 255, 0.6);
   color: var(--brand-color);
 }
 
-.svg-envelope {
+.modal__svg-envelope {
   position: absolute;
   left: 55px;
   top: 34px;
 }
 
-.svg-phone {
+.modal__svg-phone {
   position: absolute;
   left: 55px;
   top: 34px;
 }
 
-.svg-person {
+.modal__svg-person {
   position: absolute;
   left: 55px;
   top: 34px;
@@ -831,10 +831,9 @@ color: rgba(255, 255, 255, 0.6);
 .section6 .ul {
   flex-wrap: wrap;
   justify-content: space-between;
+    flex-basis: calc((100% - 20px) / 3);
 }
-.section6 .ul {
-  flex-basis: calc((100% - 20px) / 3);
-}
+
 .section6 figure {
   margin-left: 0px;
   margin-right: 0px;
