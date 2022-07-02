@@ -13,23 +13,10 @@
     margin-top: 0px;
   }
   
-  .lorem-column:not(:first-child) {
+  .lorem-column {&:not(:first-child) {
     margin-left: 30px;
   }
-  
-  .lorem-image {
-    background-color: #f5f4fa;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 120px;
-  }
-  .lorem-image__svg {
-    fill: #757575;
-    cursor: pointer;
-    margin-right: 10px;
-  }
-  .lorem-column__title {
+  &__title {
     color: var(--chapter-color);
     font-weight: 700;
     font-size: 14px;
@@ -38,8 +25,24 @@
     text-transform: uppercase;
   }
   
-  .lorem-column__text {
+  &__text {
     color: var(--brand-color2);
     font-size: 14px;
     line-height: 1.7142857143;
   }
+}
+  
+  .lorem-image {
+    background-color: #f5f4fa;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 120px;
+
+    &__svg {
+      fill: #757575;
+      cursor: pointer;
+      margin-right: 10px;
+    }
+  }
+  

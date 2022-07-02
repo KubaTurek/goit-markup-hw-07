@@ -2,45 +2,35 @@
     background-color: var(--brand-background-color);
   }
   
-  .container--footer {
-    padding-top: 60px;
-    padding-bottom: 60px;
-    display: flex;
-  }
-  
   .footer-contacts {
     margin-right: 70px;
-  }
-  .footer-contacts__link {
-    text-decoration: none;
+
+    &__link {
+      text-decoration: none;
+    }  
   }
   
-  .logo--footer {
-   
-    color: var(--text-color);}
-    
-  
-  .foter-addres {
+  .footer-addres {
     color: #fff;
     font-style: normal;
     font-size: 14px;
     line-height: 1.7142857143;
     letter-spacing: 0.03em;
     padding-top: 20px;
+
+    &__contact {
+      margin-top: 9px;
+      margin-bottom: 9px;
+      text-decoration: none;
+      color: rgba(255, 255, 255, 0.6);
+      display: block;}
+
+      &__contact:hover,
+      &__contact:focus {
+        color: var(--brand-color);
+      }
   }
   
-  .footer-addres__contact {
-    margin-top: 9px;
-    margin-bottom: 9px;
-    text-decoration: none;
-    color: rgba(255, 255, 255, 0.6);
-    display: block;
-  }
-  
-  .footer-addres__contact:hover,
-  .footer-addres__contact:focus {
-    color: var(--brand-color);
-  }
   
   .header-join-us {
     font-family: 'Roboto';
@@ -64,55 +54,34 @@
     cursor: pointer;
   }
   
-  .social-icon--footer {
-    background-color: rgba(255, 255, 255, 0.1);
-    fill: #fff;
-  }
-  
-  .social-icon--footer:hover,
-  .social-icon--footer:focus {
-    background-color: #2196f3;
-  }
-  
   .footer-form {
     margin-left: 78px;
     display: flex;
     padding-top: 14px;
+
+    &__label {
+      color: white;
+      text-transform: uppercase;
+      font-size: 14px;
+      line-height: 1.14;
+      letter-spacing: 0.03em;
+      font-weight: 700;
+      width: 358px;
+      margin-right: 12px;
+    }
+    &__input {
+      height: 50px;
+      width: 358px;
+      background-color: #2f303a;
+      border-color: rgba(255, 255, 255, 0.3);
+      margin-top: 20px;
+      padding-left: 16px;
+      color: #fff;
+    }
+    &__image {
+      margin-left: 24px;
+      margin-right: 28px;
+    }
+    
   }
   
-  .footer-form__label {
-    color: white;
-    text-transform: uppercase;
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.03em;
-    font-weight: 700;
-    width: 358px;
-    margin-right: 12px;
-  }
-  
-  .footer-form__input {
-    height: 50px;
-    width: 358px;
-    background-color: #2f303a;
-    border-color: rgba(255, 255, 255, 0.3);
-    margin-top: 20px;
-    padding-left: 16px;
-    color: #fff;
-  }
-  
-  .button--footer {
-    width: 200px;
-    height: 50px;
-    fill: #fff;
-    display: flex;
-    align-items: center;
-    margin-top: 36px;
-    padding-left: 40px;
-    padding-right: 0px;
-  }
-  
-  .footer-form__image {
-    margin-left: 24px;
-    margin-right: 28px;
-  }

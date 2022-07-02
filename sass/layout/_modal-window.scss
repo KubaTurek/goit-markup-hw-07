@@ -24,60 +24,105 @@
     transition-property: scale;
     transform: translate(-50%, -50%);
     transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &__head {
+      text-align: center;
+      padding: 0;
+      margin-top: 40px;
+    }
+    
+    &__form {
+      display: block;
+    }
+    
+    &__label {
+      display: block;
+      padding-left: 40px;
+      padding-right: 40px;
+      color: #757575;
+      position: relative;
+
+      &:focus-within {
+        fill: var(--brand-color);
+      }
+    }
+    &__checkbox {
+      -moz-appearance: none;
+      -webkit-appearance: none;
+      appearance: none;
+      display: flex;
+      align-items: center;
+    }
+    &__label-checkbox {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: #757575;
+    }
+    &__close-btn {
+      border-radius: 50%;
+      width: 30px;
+      height: 30px;
+      position: absolute;
+      top: 8px;
+      right: 8px;
+      border: 1px solid rgba(0, 0, 0, 0.1);
+      background-color: #fff;
+      justify-content: center;
+      align-items: center;
+      display: flex;
+      cursor: pointer;
+    }
+    
+    &__textarea {
+      font-size: 12px;
+      font-weight: 400;
+      padding: 12px 16px;
+      letter-spacing: 0.01em;
+      width: 100%;
+      margin-top: 4px;
+      margin-bottom: 10px;
+      border: 1px solid rgba(33, 33, 33, 0.2);
+      border-radius: 4px;
+    }
+    &__input {
+      width: 100%;
+      margin-top: 4px;
+      margin-bottom: 10px;
+      border: 1px solid rgba(33, 33, 33, 0.2);
+      padding-left: 35px;
+      height: 40px;
+      border-radius: 4px;
+
+      &:focus-within {
+        border: 1px solid var(--brand-color);
+        fill: var(--brand-color);
+        outline: none;
+      }
+    }
+    &__link {
+      color: var(--brand-color);
+    }
+    
+    &__svg-envelope {
+      position: absolute;
+      left: 55px;
+      top: 34px;
+    }
+    
+    &__svg-phone {
+      position: absolute;
+      left: 55px;
+      top: 34px;
+    }
+    
+    &__svg-person {
+      position: absolute;
+      left: 55px;
+      top: 34px;
+    }
   }
-  
-  .modal__head {
-    text-align: center;
-    padding: 0;
-    margin-top: 40px;
-  }
-  
-  .modal__form {
-    display: block;
-  }
-  
-  .modal__label {
-    display: block;
-    padding-left: 40px;
-    padding-right: 40px;
-    color: #757575;
-    position: relative;
-  }
-  
-  .modal__label:focus-within {
-    fill: var(--brand-color);
-  }
-  
-  .modal__input {
-    width: 100%;
-    margin-top: 4px;
-    margin-bottom: 10px;
-    border: 1px solid rgba(33, 33, 33, 0.2);
-    padding-left: 35px;
-    height: 40px;
-    border-radius: 4px;
-  }
-  
-  .modal__input:focus-within {
-    border: 1px solid var(--brand-color);
-    fill: var(--brand-color);
-    outline: none;
-  }
-  
-  .modal__checkbox {
-    -moz-appearance: none;
-    -webkit-appearance: none;
-    appearance: none;
-    display: flex;
-    align-items: center;
-  }
-  
-  .modal__label-checkbox {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: #757575;
-  }
+
   
   .modal__label-checkbox::before {
     content: '';
@@ -99,33 +144,6 @@
     border-radius: 2px;
   }
   
-  .modal__close-btn {
-    border-radius: 50%;
-    width: 30px;
-    height: 30px;
-    position: absolute;
-    top: 8px;
-    right: 8px;
-    border: 1px solid rgba(0, 0, 0, 0.1);
-    background-color: #fff;
-    justify-content: center;
-    align-items: center;
-    display: flex;
-    cursor: pointer;
-  }
-  
-  .modal__textarea {
-    font-size: 12px;
-    font-weight: 400;
-    padding: 12px 16px;
-    letter-spacing: 0.01em;
-    width: 100%;
-    margin-top: 4px;
-    margin-bottom: 10px;
-    border: 1px solid rgba(33, 33, 33, 0.2);
-    border-radius: 4px;
-  }
-  
   .modal__textarea::placeholder {
     color: rgba(117, 117, 117, 0.5);
   }
@@ -135,36 +153,6 @@
     fill: var(--brand-color);
     outline: none;
   }
-  .button--modal {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-left: auto;
-    margin-right: auto;
-    width: 200px;
-    height: 50px;
-    margin-top: 30px;
-  }
+ 
   
-  .modal__link {
-    color: var(--brand-color);
-  }
-  
-  .modal__svg-envelope {
-    position: absolute;
-    left: 55px;
-    top: 34px;
-  }
-  
-  .modal__svg-phone {
-    position: absolute;
-    left: 55px;
-    top: 34px;
-  }
-  
-  .modal__svg-person {
-    position: absolute;
-    left: 55px;
-    top: 34px;
-  }
   

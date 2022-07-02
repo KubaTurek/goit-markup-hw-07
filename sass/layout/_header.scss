@@ -1,35 +1,30 @@
 .header {
-    border: 1px solid #ececec;
-  }
-  .container--header {
-    display: flex;
-    align-items: center;
-  }
-  
-  .logo-link {
-    text-decoration: none;
-    margin-top: 24px;
-    margin-bottom: 24px;
-    margin-right: 93px;
-  }
-  
-  .menu {
-    list-style: none;
-    display: flex;
-    padding-left: 0px;
-    padding-right: 0px;
-    margin-bottom: 0px;
-    margin-top: 0px;
-  }
-  
-  .menu-page {
-    position: relative;
-  }
-  .menu-page:not(:last-child) {
+  border: 1px solid #ececec;
+}
+
+.logo-link {
+  text-decoration: none;
+  margin-top: 24px;
+  margin-bottom: 24px;
+  margin-right: 93px;
+}
+
+.menu {
+  list-style: none;
+  display: flex;
+  padding-left: 0px;
+  padding-right: 0px;
+  margin-bottom: 0px;
+  margin-top: 0px;
+}
+
+.menu-page {
+  position: relative;
+
+  &:not(:last-child) {
     margin-right: 46px;
   }
-  
-  .menu-page__link {
+  &__link {
     text-decoration: none;
     color: #212121;
     font-style: normal;
@@ -37,51 +32,50 @@
     font-size: 14px;
     line-height: 1.1428571429;
     letter-spacing: 0.02em;
+
+    &:focus,
+    &:hover {
+      color: var(--brand-color);
+    }
+    &--active::after {
+      content: '';
+      height: 4px;
+      background: var(--brand-color);
+      border-radius: 2px;
+      margin-top: 30px;
+      display: block;
+      position: absolute;
+      width: 55px;
+    }
   }
-  .menu-page__link:focus,
-  .menu-page__link:hover {
-    color: var(--brand-color);
-  }
-  
-  .menu-page__link--active::after {
-    content: '';
-    height: 4px;
-    background: var(--brand-color);
-    border-radius: 2px;
-    margin-top: 30px;
-    display: block;
-    position: absolute;
-    width: 55px;
-  }
-  
-  .header-contacts {
-    list-style: none;
-    display: flex;
-    margin-left: auto;
-  }
-  
-  .header-info:nth-child(1) {
+}
+
+.header-info {
+  &:nth-child(1) {
     margin-right: 30px;
   }
-  
-  .header-info:focus .header-info__link,
-  .header-info:hover .header-info__link,
-  .header-info:hover .header-info__svg,
-  .header-info:focus .header-info__svg {
+
+  &:focus .header-info__link,
+  &:hover .header-info__link,
+  &:hover .header-info__svg,
+  &:focus .header-info__svg {
     color: #2196f3;
     fill: #2196f3;
   }
-  
-  .header-info__link {
+  &__link {
     text-decoration: none;
     color: #757575;
     align-items: center;
     display: flex;
   }
-  
-  .header-info__svg {
+  &__svg {
     fill: #757575;
     cursor: pointer;
     margin-right: 10px;
   }
-  
+}
+.header-contacts {
+  list-style: none;
+  display: flex;
+  margin-left: auto;
+}

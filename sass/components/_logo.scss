@@ -7,12 +7,9 @@
     letter-spacing: 0.03em;
     text-decoration: none;
     cursor: pointer;
-    
-  }
 
-  .logo--studio {color: black;
-  }
+    &--studio {color: black};
+    &--web {color: var(--brand-color);}
+    &--footer {color: var(--text-color);}
   
-  .logo--web {color: var(--brand-color);
-  }
-  
+}

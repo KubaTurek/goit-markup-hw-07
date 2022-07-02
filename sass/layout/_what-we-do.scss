@@ -26,27 +26,29 @@
   
   .branch {
     position: relative;
+
+    &__caption {
+      position: absolute;
+      width: 370px;
+      height: 70px;
+      background-color: #2f303a;
+      opacity: 0.8;
+      bottom: 4px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    
+    &__title {
+      font-family: 'Roboto';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 14px;
+      line-height: 16px;
+      letter-spacing: 0.03em;
+      text-transform: uppercase;
+      color: #ffffff;
+    }
   }
-  .branch__caption {
-    position: absolute;
-    width: 370px;
-    height: 70px;
-    background-color: #2f303a;
-    opacity: 0.8;
-    bottom: 4px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .branch__title {
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 16px;
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
-    color: #ffffff;
-  }
+ 
   
